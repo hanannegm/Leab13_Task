@@ -1,6 +1,6 @@
 <?php
     // Database connection
-    include('./config/db.php');
+    include('./db.php');
 
     global $email_verified, $email_already_verified, $activation_error;
 
@@ -22,13 +22,13 @@
                      $update = mysqli_query($connection, "UPDATE users SET is_active = '1' WHERE token = '$token' ");
                        if($update){
                            $email_verified = '<div class="alert alert-success">
-                                  User email successfully verified!
+                                  Username successfully verified!
                                 </div>
                            ';
                        }
                   } else {
-                        $email_already_verified = '<div class="alert alert-danger">
-                               User email already verified!
+                        $username_already_verified = '<div class="alert alert-danger">
+                               User_name already verified!
                             </div>
                         ';
                   }
