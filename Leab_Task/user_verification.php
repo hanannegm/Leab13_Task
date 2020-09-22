@@ -1,4 +1,4 @@
-<?php include('./controllers/user_activation.php'); ?>
+<?php include('./user_activation.php'); ?>
 
 <!doctype html>
 <html lang="en">
@@ -19,10 +19,10 @@
 
     <div class="container">
         <div class="jumbotron text-center">
-            <h1 class="display-4">User Email Verification Demo</h1>
+            <h1 class="display-4">User_name Verification Demo</h1>
             <div class="col-12 mb-5 text-center">
-                <?php echo $email_already_verified; ?>
-                <?php echo $email_verified; ?>
+                <?php echo $username_already_verified; ?>
+                <?php echo $username_verified; ?>
                 <?php echo $activation_error; ?>
             </div>
             <p class="lead">If user account is verified then click on the following button to login.</p>
